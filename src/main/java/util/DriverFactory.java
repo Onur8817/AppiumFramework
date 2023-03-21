@@ -20,8 +20,8 @@ public class DriverFactory {
         if (browser.equals("Android")){
             desiredCapabilities.setCapability("platformName","Android");
             desiredCapabilities.setCapability("udid","emulator-5554");
-            desiredCapabilities.setCapability("appPackage","mobi.appcent.apponte");
-            desiredCapabilities.setCapability("appActivity","mobi.appcent.apponte.ui.activity.login.LoginActivity");
+            desiredCapabilities.setCapability("appPackage","com.dmall.mfandroid");
+            desiredCapabilities.setCapability("appActivity","com.dmall.mfandroid.activity.base.NewSplash");
 
         } else if (browser.equals("IOS")) {
             desiredCapabilities.setCapability("platformName","IOS");

@@ -9,6 +9,8 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.sql.Time;
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class ElementHelper {
@@ -17,7 +19,7 @@ public class ElementHelper {
     Actions action;
     public ElementHelper(AppiumDriver driver){
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, 10);
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         this.action = new Actions(driver);
     }
 
